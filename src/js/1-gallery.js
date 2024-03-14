@@ -94,6 +94,9 @@ document.addEventListener('DOMContentLoaded', () => {
         })
       })
 
-      let gallery = new simpleLightbox('.gallery a');
+      let gallery = new simpleLightbox('.gallery a', {
+        captions: true, // Включить отображение описаний
+        captionDelay: 250 // Задержка перед появлением описания (250 мс)
+    });
     
 });
