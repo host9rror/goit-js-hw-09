@@ -88,15 +88,11 @@ document.addEventListener('DOMContentLoaded', () => {
         galleryLink.appendChild(galleryImg);
         galleryItem.appendChild(galleryLink);
         galleryContainer.appendChild(galleryItem);
-
-        galleryItem.addEventListener('click', (event) => {
-            event.preventDefault();
-        })
       })
 
       let gallery = new simpleLightbox('.gallery a', {
-        captions: true, // Включить отображение описаний
-        captionDelay: 250 // Задержка перед появлением описания (250 мс)
+        captionData: true, 
+        captionDelay: 250 
     });
     
 });
