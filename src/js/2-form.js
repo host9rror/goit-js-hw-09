@@ -33,6 +33,6 @@ form.addEventListener("submit", evt => {
 
     form.reset();
   } else {
-    alert("Please fill in both fields before submitting the form.");
+    alert("Please fill in both fields before submitting the form");
   }
 });
