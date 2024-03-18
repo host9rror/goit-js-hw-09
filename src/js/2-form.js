@@ -26,8 +26,7 @@ form.addEventListener("submit", evt => {
   evt.preventDefault();
 
   if (emailInput.value.trim() && textarea.value.trim()) {
-    console.log(emailInput.value);
-    console.log(textarea.value);
+    (console.log({ email: emailInput.value, message: textarea.value }));
 
     localStorage.removeItem(localStorageKey);
 
